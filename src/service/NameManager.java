@@ -16,16 +16,17 @@ public class NameManager {
         return "Name: " + name;
     }
 
-    public void showAllNames() {
+    public String showAllNames() {
         if (names.isEmpty()) {
             JOptionPane.showMessageDialog(null, "No names available.");
-
+            return "No names available.";
         }
         for (String n : names) {
             // Print to console
             System.out.println("Name: " + n);
-            JOptionPane.showMessageDialog(null, "Name: " + n);
+            //JOptionPane.showMessageDialog(null, "Name: " + n);
         }
+        return "Name: " + names.toString();
     }
 
     public String removeName(final String name) {
@@ -35,9 +36,6 @@ public class NameManager {
             return "Name not found: " + name;
         }
     }
-    /**
-     * Clears all names from the set.
-     */
     public void clearNames() {
         names.clear();
         JOptionPane.showMessageDialog(null, "All names cleared.");

@@ -29,7 +29,8 @@ public class App {
                 }
                 case 2:
                     System.out.println("Showing all names:");
-                    nameManager.showAllNames();
+                    String names = nameManager.showAllNames();
+                    JOptionPane.showMessageDialog(null, names, "List Name", JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 3: {
                     System.out.println("Enter the name to remove:");
