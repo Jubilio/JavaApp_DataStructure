@@ -46,14 +46,12 @@ public class StoreApp {
                     break;
 
                 case 2:
-                    // TODO: implement viewProducts() in ProductManager
                     String list = productManager.viewProducts(); 
                     // Assuming viewProducts() returns a String representation
                     JOptionPane.showMessageDialog(null, list, "Product List", JOptionPane.INFORMATION_MESSAGE);
                     break;
 
                 case 3:
-                    // TODO: implement updateProductStock() in ProductManager
                     String prodToUpdate = JOptionPane.showInputDialog(null, "Enter product name to update:");
                     if (prodToUpdate != null) {
                         String newQtyStr = JOptionPane.showInputDialog(null, "Enter new stock quantity:");
