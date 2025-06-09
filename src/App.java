@@ -13,12 +13,14 @@ public class App {
         do {
 
             opt = Integer.parseInt(JOptionPane.showInputDialog(
-                    "Choose an option:\n"
-                            + "1. Add Name\n"
-                            + "2. Show Names\n"
-                            + "3. Remove Name\n"
-                            + "4. Clear Names\n"
-                            + "5. Exit"));
+                    """
+                    Choose an option:
+                    1. Add Name
+                    2. Show Names
+                    3. Remove Name
+                    4. Clear Names
+                    5. Exit
+                    """));
 
             switch (opt) {
                 case 1: {
